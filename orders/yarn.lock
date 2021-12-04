@@ -488,9 +488,9 @@
     chalk "^4.0.0"
 
 "@nanosrlorg/common@^1.0.2":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@nanosrlorg/common/-/common-1.0.8.tgz#8900d0bcc1cab20291d74ca28bebd0e00ebd5b7d"
-  integrity sha512-KEGfv2X9m586b5ao0tZhH5Kgj0y06R5mleUhcxQl9mvyH90DEDs218CNTdYSSF5lbi+n0xLW1vjqOL3bClHyfA==
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@nanosrlorg/common/-/common-1.0.11.tgz#d2436f62de9cdcecaa5d6bb95ed9e575be76b8dd"
+  integrity sha512-RDOtiCftcN/o/DfSfrUmZ9Ytq4yImqfTolMFz1Aqi0muptag94uBbnJtGqzZQUGbvXzSWVEArQpsDg8Rg3JjAw==
   dependencies:
     "@types/cookie-session" "^2.0.43"
     "@types/express" "^4.17.13"
