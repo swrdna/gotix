@@ -57,7 +57,6 @@ build:
       context: client
       docker:
         dockerfile: Dockerfile
-        noCache: true
       sync:
         manual:
           - src: '**/*.(js|jsx)'
