@@ -488,9 +488,9 @@
     chalk "^4.0.0"
 
 "@nanosrlorg/common@^1.0.2":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@nanosrlorg/common/-/common-1.0.12.tgz#a4f1678143422ce1f3990aad43d0aa1792d3bbc2"
-  integrity sha512-8VBD4in7EUov/5SybdSDT6xJevNcC9/UB5R8Yz1ZMl226NhwwV4/pzV/GSv+Wt69AslL1lNK/pg72mX0dukM8A==
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@nanosrlorg/common/-/common-1.0.13.tgz#f41af533ae3a4e18b94c862d04244d49563a1b91"
+  integrity sha512-Dn/kejToYln2aSaXx5XUOUeMuxWuC+XM/9Uo5GEJZ7msqn04m1UtAe0eoQN86PPVIVOeym0bOYorddAj9WivnQ==
   dependencies:
     "@types/cookie-session" "^2.0.43"
     "@types/express" "^4.17.13"
@@ -658,7 +658,7 @@
   dependencies:
     mongoose "*"
 
-"@types/node@*":
+"@types/node@*", "@types/node@>=8.1.0":
   version "16.11.11"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.11.tgz#6ea7342dfb379ea1210835bada87b3c512120234"
   integrity sha512-KB0sixD67CeecHC33MYn+eYARkqTheIRNuu97y2XMjR7Wu3XibO1vaY6VBV6O/a89SPI81cEUIYT87UqUWlZNw==
@@ -3005,7 +3005,7 @@ qs@6.7.0:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
-qs@^6.9.4:
+qs@^6.6.0, qs@^6.9.4:
   version "6.10.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.10.1.tgz#4931482fa8d647a5aab799c5271d2133b981fb6a"
   integrity sha512-M528Hph6wsSVOBiYUnGf+K/7w0hNshs/duGsNXPUCLH5XAqjEtiPGwNONLV0tBH8NoGb0mvD5JubnUTrujKDTg==
@@ -3325,6 +3325,14 @@ strip-json-comments@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+
+stripe@^8.191.0:
+  version "8.191.0"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.191.0.tgz#7bb56080dce2e2e9cc4f52dc05792626ea46bfd6"
+  integrity sha512-3oyuIbuW3WDsbGnMUtIZPkr+sOUJ3NEtEwghd81ZuWc+Tq09MrgWXGekbVnbxA3TMFwfKOILw6QoiPA7za4JUg==
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.6.0"
 
 superagent@^6.1.0:
   version "6.1.0"

@@ -3,10 +3,12 @@ import mongoose from 'mongoose'
 import jwt from 'jsonwebtoken'
 
 declare global {
-  function signin(): string[]
+  function signin(id?: string): string[]
 }
 
 jest.mock('../natsWrapper')
+
+process.env.STRIPE_KEY = 'sk_test_51K36lnFpY0EvrCzwzp01JlSx7jFfFAtSd7yUnwbyiayaO6CA02H39pla3WpdlkPni1riseKlAgQZ4Syp5QQWLG91007duEvVSQ'
 
 let mongo: any
 beforeAll(async () => {
@@ -33,9 +35,9 @@ afterAll(async () => {
   await mongoose.connection.close()
 })
 
-global.signin = () => {
+global.signin = (id?: string) => {
   const payload = {
-    id: new mongoose.Types.ObjectId().toHexString(),
+    id: id || new mongoose.Types.ObjectId().toHexString(),
     email: 'test@test.com'
   }
 
